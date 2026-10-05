@@ -15,7 +15,10 @@ A versão do GitHub Pages continua disponível como demonstração estática, ma
 - `dados/progresso.json`: números gerais;
 - `CONTEXTO.md`: instruções e ponto de retomada para um novo chat;
 - `dados/simulados.json`: catálogo de provas oficiais por ano;
+- `dados/questoes/`: 735 questões estruturadas de 2020–2023;
 - `server.js`: servidor, API e banco SQLite;
+- `ROADMAP.md`: fases concluídas e próximas entregas;
+- `THIRD_PARTY.md`: fontes e licenças dos dados;
 - `index.html`, `styles.css` e `app.js`: aplicação web.
 
 ## Fluxo de uma sessão
