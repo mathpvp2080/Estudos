@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Minha central de estudos do 9º ano." />
+  <title>Estudaí — minha central de estudos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio" aria-label="Estudaí — início"><span class="brand-mark">E</span><span>estudaí</span></a>
+      <nav aria-label="Navegação principal">
+        <p class="nav-label">MEU ESPAÇO</p>
+        <a class="nav-item active" href="#inicio" data-view="inicio"><span>⌂</span> Visão geral</a>
+        <a class="nav-item" href="#hoje" data-view="hoje"><span>◷</span> Estudar agora</a>
+        <a class="nav-item" href="#diagnostico" data-view="diagnostico"><span>◎</span> Diagnóstico</a>
+        <a class="nav-item" href="#progresso" data-view="progresso"><span>↗</span> Meu progresso</a>
+        <p class="nav-label">MATÉRIAS</p>
+        <div id="subjectNav"></div>
+      </nav>
+      <div class="sidebar-note"><span>✦</span><div><strong>Um passo por dia</strong><small>Consistência vence pressa.</small></div></div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+        <div class="breadcrumb">9º ano <span>/</span> <b id="pageName">Visão geral</b></div>
+        <div class="top-actions"><div class="streak">🔥 <strong id="streakCount">0</strong> dias</div><div class="avatar">MP</div></div>
+      </header>
+      <div id="content" class="content"></div>
+    </main>
+  </div>
+
+  <template id="homeTemplate">
+    <section class="hero">
+      <div><span class="eyebrow">SEGUNDA-FEIRA • 9º ANO</span><h1>Olá! O que vamos<br><em>aprender hoje?</em></h1><p>Escolha uma matéria, avance no seu ritmo e registre cada conquista.</p><button class="primary-btn" data-go="hoje">Começar a estudar <span>→</span></button></div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="book">✦<span>ABC<br>+ 123</span></div><i class="spark s1">✦</i><i class="spark s2">✦</i></div>
+    </section>
+    <section class="section-head"><div><span class="eyebrow">SEU CAMINHO</span><h2>Continue de onde parou</h2></div><button class="text-btn" data-go="progresso">Ver progresso completo →</button></section>
+    <div class="continue-grid" id="continueGrid"></div>
+    <section class="stats-strip"><div><span class="stat-icon lilac">✓</span><p><strong id="completedStat">0</strong><small>sessões concluídas</small></p></div><div><span class="stat-icon yellow">◷</span><p><strong id="minutesStat">0 min</strong><small>tempo de estudo</small></p></div><div><span class="stat-icon green">↗</span><p><strong id="averageStat">0%</strong><small>progresso geral</small></p></div><div><span class="stat-icon coral">★</span><p><strong id="pointsStat">0</strong><small>pontos conquistados</small></p></div></section>
+    <section class="section-head compact"><div><span class="eyebrow">EXPLORE</span><h2>Todas as matérias</h2></div></section>
+    <div class="subject-grid" id="subjectGrid"></div>
+  </template>
+
+  <template id="diagnosticTemplate">
+    <section class="page-intro"><span class="eyebrow">PONTO DE PARTIDA</span><h1>Diagnóstico de conhecimento</h1><p>Não é prova e não vale nota. As respostas servem para adaptar seus próximos estudos.</p></section>
+    <div id="quizArea"></div>
+  </template>
+
+  <template id="todayTemplate">
+    <section class="page-intro"><span class="eyebrow">SESSÃO DO DIA</span><h1>Vamos estudar?</h1><p>Escolha uma matéria e faça uma sessão curta: aprender, praticar e revisar.</p></section>
+    <div class="study-layout"><div class="panel"><h3>1. Escolha a matéria</h3><div class="study-subjects" id="studySubjects"></div></div><div class="panel today-plan"><span class="eyebrow">MÉTODO 25–5</span><h2>Sua sessão de hoje</h2><ol><li><b>5 min</b> — relembre o que já sabe</li><li><b>12 min</b> — estude um conceito novo</li><li><b>6 min</b> — resolva exercícios</li><li><b>2 min</b> — anote dúvidas e aprendizados</li></ol><button class="primary-btn" id="startSession" disabled>Escolha uma matéria</button></div></div>
+  </template>
+</body>
+<script src="app.js"></script>
+</html>
