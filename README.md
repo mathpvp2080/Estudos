@@ -8,7 +8,7 @@ Produto educacional adaptativo para formação escolar, idiomas, comunicação e
 npm start
 ```
 
-Abra `http://localhost:4173`. O servidor Node cria um banco SQLite em `.data/estudai.db`. Não há dependências externas.
+Abra `http://localhost:4173`. O servidor Node usa **Supabase/PostgreSQL** para todos os dados de usuário. Nenhum progresso, cadastro ou consentimento é salvo localmente. Consulte `supabase/schema.sql` e `.env.example`.
 
 ## Produto atual
 
@@ -19,11 +19,12 @@ Abra `http://localhost:4173`. O servidor Node cria um banco SQLite em `.data/est
 - planos Explorar, Essencial, Pro e Família;
 - pré-cadastro de teste gratuito por 30 dias;
 - API de cursos, planos, progresso e testes;
-- banco SQLite local.
+- persistência em nuvem com Supabase;
 
 ## Estrutura
 
-- `server.js`: servidor, APIs e banco;
+- `server.js`: servidor e APIs conectadas ao Supabase;
+- `supabase/schema.sql`: estrutura, relações e políticas de segurança;
 - `index.html`, `styles.css`, `app.js`: aplicação;
 - `PRODUCT.md`: estratégia comercial e requisitos;
 - `ROADMAP.md`: fases do produto;

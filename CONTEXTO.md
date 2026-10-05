@@ -18,8 +18,12 @@ Construir um produto profissional e sustentável, com plano gratuito e assinatur
 
 ## Estado atual
 
-- Catálogo com 13 cursos no SQLite.
+- Catálogo com 13 cursos versionado no repositório.
 - Formação escolar, idiomas e programação disponíveis.
 - Quatro planos comerciais definidos.
-- Pré-cadastro para 30 dias grátis funcionando sem cobrança.
+- Pré-cadastro preparado para Supabase, sem persistência local e sem cobrança.
 - Próxima fase: autenticação, perfis, conteúdos completos e integração de pagamento em ambiente de teste.
+
+## Persistência obrigatória
+
+Todos os dados de conta, consentimento, progresso e assinatura devem ficar no Supabase. Não reintroduzir SQLite, arquivos locais de usuário ou localStorage para progresso. O localStorage é permitido apenas para preferências técnicas não sensíveis, como a escolha do banner de cookies.

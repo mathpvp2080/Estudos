@@ -57,3 +57,7 @@ O protótipo atual faz somente pré-cadastro e não realiza cobranças.
 - evolução por habilidade;
 - cancelamento e motivo;
 - satisfação e solicitações de suporte.
+
+## Arquitetura de dados definida
+
+O produto usa Supabase/PostgreSQL como fonte única para contas, progresso, consentimentos e assinaturas. O backend guarda a `service_role` somente em variáveis secretas. Row Level Security protege dados por usuário. Nenhum dado acadêmico deve depender do dispositivo ou ficar apenas local.
