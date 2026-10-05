@@ -4,7 +4,9 @@ Plataforma pessoal de preparação para o ENEM, começando no nível atual do es
 
 ## Usar o site
 
-Abra `index.html` ou acesse a publicação do GitHub Pages. O site é estático e não envia dados pessoais a servidores.
+Execute `npm start` e abra `http://localhost:4173`. O servidor Node cria automaticamente um banco SQLite em `.data/estudai.db`, oferece APIs de conteúdo e progresso e salva resultados de simulados. Não há dependências externas.
+
+A versão do GitHub Pages continua disponível como demonstração estática, mas recursos persistentes exigem o servidor.
 
 ## Organização
 
@@ -12,6 +14,8 @@ Abra `index.html` ou acesse a publicação do GitHub Pages. O site é estático 
 - `relatorios/`: relatórios datados de cada sessão;
 - `dados/progresso.json`: números gerais;
 - `CONTEXTO.md`: instruções e ponto de retomada para um novo chat;
+- `dados/simulados.json`: catálogo de provas oficiais por ano;
+- `server.js`: servidor, API e banco SQLite;
 - `index.html`, `styles.css` e `app.js`: aplicação web.
 
 ## Fluxo de uma sessão
