@@ -1,6 +1,6 @@
 # Estudaí 📚
 
-Central pessoal de estudos para o 9º ano, com trilhas por matéria, diagnóstico inicial e acompanhamento de progresso.
+Plataforma pessoal de preparação para o ENEM, começando no nível atual do estudante e evoluindo por trilhas adaptativas. Inclui diagnóstico por matéria, acompanhamento de progresso e JavaScript como trilha opcional.
 
 ## Usar o site
 

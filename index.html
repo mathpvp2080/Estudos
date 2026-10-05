@@ -29,7 +29,7 @@
     <main>
       <header class="topbar">
         <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
-        <div class="breadcrumb">9º ano <span>/</span> <b id="pageName">Visão geral</b></div>
+        <div class="breadcrumb">Preparação ENEM <span>/</span> <b id="pageName">Visão geral</b></div>
         <div class="top-actions"><div class="streak">🔥 <strong id="streakCount">0</strong> dias</div><div class="avatar">MP</div></div>
       </header>
       <div id="content" class="content"></div>
@@ -38,7 +38,7 @@
 
   <template id="homeTemplate">
     <section class="hero">
-      <div><span class="eyebrow">SEGUNDA-FEIRA • 9º ANO</span><h1>Olá! O que vamos<br><em>aprender hoje?</em></h1><p>Escolha uma matéria, avance no seu ritmo e registre cada conquista.</p><button class="primary-btn" data-go="hoje">Começar a estudar <span>→</span></button></div>
+      <div><span class="eyebrow">SUA JORNADA ATÉ O ENEM</span><h1>Aprenda no seu nível.<br><em>E evolua sempre.</em></h1><p>O diagnóstico encontra seu ponto de partida e cada trilha acompanha o seu ritmo.</p><button class="primary-btn" data-go="diagnostico">Descobrir meu nível <span>→</span></button></div>
       <div class="hero-art" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="book">✦<span>ABC<br>+ 123</span></div><i class="spark s1">✦</i><i class="spark s2">✦</i></div>
     </section>
     <section class="section-head"><div><span class="eyebrow">SEU CAMINHO</span><h2>Continue de onde parou</h2></div><button class="text-btn" data-go="progresso">Ver progresso completo →</button></section>
@@ -49,12 +49,12 @@
   </template>
 
   <template id="diagnosticTemplate">
-    <section class="page-intro"><span class="eyebrow">PONTO DE PARTIDA</span><h1>Diagnóstico de conhecimento</h1><p>Não é prova e não vale nota. As respostas servem para adaptar seus próximos estudos.</p></section>
+    <section class="page-intro"><span class="eyebrow">PONTO DE PARTIDA PARA O ENEM</span><h1>Descubra seu nível atual</h1><p>Não é prova e não vale nota. Suas respostas definem se cada trilha começa no nível fundamental, básico, intermediário ou avançado.</p></section>
     <div id="quizArea"></div>
   </template>
 
   <template id="todayTemplate">
-    <section class="page-intro"><span class="eyebrow">SESSÃO DO DIA</span><h1>Vamos estudar?</h1><p>Escolha uma matéria e faça uma sessão curta: aprender, praticar e revisar.</p></section>
+    <section class="page-intro"><span class="eyebrow">SESSÃO ADAPTATIVA</span><h1>Vamos estudar para o ENEM?</h1><p>Escolha uma matéria. O conteúdo começa no seu nível atual e avança conforme o seu desempenho.</p></section>
     <div class="study-layout"><div class="panel"><h3>1. Escolha a matéria</h3><div class="study-subjects" id="studySubjects"></div></div><div class="panel today-plan"><span class="eyebrow">MÉTODO 25–5</span><h2>Sua sessão de hoje</h2><ol><li><b>5 min</b> — relembre o que já sabe</li><li><b>12 min</b> — estude um conceito novo</li><li><b>6 min</b> — resolva exercícios</li><li><b>2 min</b> — anote dúvidas e aprendizados</li></ol><button class="primary-btn" id="startSession" disabled>Escolha uma matéria</button></div></div>
   </template>
 </body>
