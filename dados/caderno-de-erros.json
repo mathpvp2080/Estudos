@@ -1,0 +1,20 @@
+{
+  "ultimaAtualizacao": "2026-10-05",
+  "revisoes": [],
+  "formato": {
+    "campos": [
+      "id",
+      "data",
+      "materia",
+      "assunto",
+      "pergunta",
+      "respostaDoEstudante",
+      "respostaCorreta",
+      "tipoDoErro",
+      "explicacao",
+      "revisarEm",
+      "resolvido"
+    ],
+    "tiposDeErro": ["conteudo", "interpretacao", "calculo", "distracao", "tempo"]
+  }
+}

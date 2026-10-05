@@ -17,6 +17,10 @@ Construir uma preparação de longo prazo para o **ENEM**, partindo do conhecime
 7. Atualizar `dados/progresso.json` e, quando necessário, os dados exibidos no site.
 8. Fazer commit e push **somente** para a branch de trabalho permitida nesta sessão.
 
+## Meta e método
+
+A meta motivadora é chegar ao mais alto desempenho possível, incluindo redação nota 1000. Nunca prometer resultado: usar a meta para orientar domínio real, consistência e mensuração. Consultar `PLANO_ENEM.md` e registrar erros em `dados/caderno-de-erros.json`, com revisões em 1, 7 e 30 dias.
+
 ## Estado atual
 
 - Site inicial criado.
