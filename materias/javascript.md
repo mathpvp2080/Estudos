@@ -1,6 +1,6 @@
-# JavaScript — trilha opcional
+# JavaScript
 
-> Esta matéria não faz parte da preparação obrigatória para o ENEM e não entra no progresso geral. Só será estudada quando o estudante escolher.
+> Trilha de programação web do nível iniciante ao avançado, com exercícios e projetos práticos.
 
 ## Situação atual
 

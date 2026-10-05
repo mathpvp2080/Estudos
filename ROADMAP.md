@@ -1,50 +1,36 @@
-# Roadmap de evolução da plataforma
+# Roadmap do Estudaí
 
-## Fase 1 — Auditoria e fundação profissional ✅
+## Fase 1 — Reposicionamento e catálogo ✅
+- produto amplo, sem dependência de uma prova específica;
+- formação escolar, idiomas, comunicação e programação;
+- catálogo e trilhas iniciais no banco.
 
-- comparação funcional com plataformas de referência;
-- servidor Node, API e banco SQLite;
-- arquitetura de progresso, sessões, erros e conteúdos;
-- identidade visual responsiva.
+## Fase 2 — Modelo comercial ✅ protótipo
+- planos Explorar, Essencial, Pro e Família;
+- 30 dias de teste nos planos pagos;
+- pré-cadastro sem cobrança;
+- página profissional de preços.
 
-## Fase 2 — Banco real de questões ✅
+## Fase 3 — Plataforma de conteúdo
+- editor e painel administrativo;
+- módulos, aulas, exercícios, projetos e certificados;
+- busca, filtros, favoritos e retomada da aula;
+- conteúdo próprio ou devidamente licenciado.
 
-- integração do banco aberto enem.dev;
-- 735 questões oficiais de 2020 a 2023 armazenadas no banco local;
-- textos, alternativas, imagens, idioma, área e gabarito;
-- links para cadernos e gabaritos oficiais do Inep.
+## Fase 4 — Contas e progresso
+- autenticação segura, recuperação de senha e perfis;
+- progresso sincronizado em nuvem;
+- recomendações e revisão espaçada;
+- painel do aluno e painel familiar.
 
-## Fase 3 — Simulador profissional ✅
+## Fase 5 — Assinaturas reais
+- Stripe ou Mercado Pago em ambiente de teste;
+- checkout hospedado, webhooks e controle de acesso;
+- início e fim correto do trial;
+- cancelamento simples, faturas e comunicação transparente.
 
-- seleção de ano, dia, idioma e quantidade;
-- prova em tela cheia, cronômetro, cartão-resposta e navegação livre;
-- marcação para revisão, confirmação de questões em branco;
-- desempenho por área e histórico persistido.
-
-## Fase 4 — Conteúdo e trilhas adaptativas (próxima)
-
-- matriz completa de assuntos por disciplina;
-- aulas em texto, exemplos, resumos, flashcards e exercícios;
-- recomendação diária baseada em lacunas e revisões;
-- busca e filtros no banco de questões.
-
-## Fase 5 — Redação
-
-- ambiente de escrita com tema, textos motivadores e cronômetro;
-- histórico de versões;
-- avaliação estruturada pelas cinco competências;
-- plano de melhoria e reescrita.
-
-## Fase 6 — Inteligência de desempenho
-
-- dashboard por assunto e área;
-- tempo por questão, curva de evolução e mapa de lacunas;
-- agenda de revisão em 1, 7 e 30 dias;
-- estimativa de nível sem inventar uma nota TRI.
-
-## Fase 7 — Produto e nuvem
-
-- contas de usuário e autenticação;
-- banco hospedado com sincronização entre dispositivos;
-- implantação do backend (GitHub Pages continuará apenas como demonstração);
-- acessibilidade, testes automatizados, PWA e modo offline.
+## Fase 6 — Qualidade e lançamento
+- LGPD, termos, privacidade e consentimento para menores;
+- acessibilidade WCAG, testes e monitoramento;
+- suporte, métricas de negócio e implantação em nuvem;
+- piloto fechado antes de cobrar clientes.

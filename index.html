@@ -18,11 +18,13 @@
         <p class="nav-label">MEU ESPAÇO</p>
         <a class="nav-item active" href="#inicio" data-view="inicio"><span>⌂</span> Visão geral</a>
         <a class="nav-item" href="#hoje" data-view="hoje"><span>◷</span> Estudar agora</a>
+        <a class="nav-item" href="#catalogo" data-view="catalogo"><span>▦</span> Catálogo de cursos</a>
         <a class="nav-item" href="#diagnostico" data-view="diagnostico"><span>◎</span> Diagnóstico</a>
-        <a class="nav-item" href="#simulados" data-view="simulados"><span>▣</span> Simulados ENEM</a>
+        <a class="nav-item" href="#simulados" data-view="simulados"><span>▣</span> Desafios e avaliações</a>
         <a class="nav-item" href="#progresso" data-view="progresso"><span>↗</span> Meu progresso</a>
-        <a class="nav-item" href="#plano" data-view="plano"><span>▦</span> Plano rumo ao 1000</a>
+        <a class="nav-item" href="#plano" data-view="plano"><span>◇</span> Minha jornada</a>
         <a class="nav-item" href="#erros" data-view="erros"><span>!</span> Caderno de erros</a>
+        <a class="nav-item" href="#assinatura" data-view="assinatura"><span>★</span> Planos e assinatura</a>
         <p class="nav-label">MATÉRIAS</p>
         <div id="subjectNav"></div>
       </nav>
@@ -32,7 +34,7 @@
     <main>
       <header class="topbar">
         <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
-        <div class="breadcrumb">Preparação ENEM <span>/</span> <b id="pageName">Visão geral</b></div>
+        <div class="breadcrumb">Minha aprendizagem <span>/</span> <b id="pageName">Visão geral</b></div>
         <div class="top-actions"><div class="streak">🔥 <strong id="streakCount">0</strong> dias</div><div class="avatar">MP</div></div>
       </header>
       <div id="content" class="content"></div>
@@ -41,10 +43,10 @@
 
   <template id="homeTemplate">
     <section class="hero">
-      <div><span class="eyebrow">SUA JORNADA ATÉ O ENEM</span><h1>Aprenda no seu nível.<br><em>E evolua sempre.</em></h1><p>O diagnóstico encontra seu ponto de partida e cada trilha acompanha o seu ritmo.</p><button class="primary-btn" data-go="diagnostico">Descobrir meu nível <span>→</span></button></div>
+      <div><span class="eyebrow">APRENDIZADO QUE EVOLUI COM VOCÊ</span><h1>Aprenda no seu nível.<br><em>Construa seu futuro.</em></h1><p>Formação escolar, idiomas e programação em trilhas práticas e personalizadas.</p><button class="primary-btn" data-go="catalogo">Explorar cursos <span>→</span></button></div>
       <div class="hero-art" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="book">✦<span>ABC<br>+ 123</span></div><i class="spark s1">✦</i><i class="spark s2">✦</i></div>
     </section>
-    <section class="mission-card"><div><span class="mission-icon">🎯</span><div><span class="eyebrow">META DE LONGO PRAZO</span><h3>Construir domínio para o ENEM — sem pular a base</h3><p>Diagnóstico → fundamento → domínio → questões ENEM → simulados → revisão de erros.</p></div></div><div class="mission-score"><small>REDAÇÃO</small><strong>1000</strong><span>meta</span></div></section>
+    <section class="mission-card"><div><span class="mission-icon">🚀</span><div><span class="eyebrow">30 DIAS PARA EXPERIMENTAR</span><h3>Uma plataforma, muitos caminhos para aprender</h3><p>Diagnóstico → trilha personalizada → prática → projetos → evolução mensurável.</p></div></div><button class="primary-btn purple" data-go="assinatura">Começar grátis</button></section>
     <section class="section-head"><div><span class="eyebrow">SEU CAMINHO</span><h2>Continue de onde parou</h2></div><button class="text-btn" data-go="progresso">Ver progresso completo →</button></section>
     <div class="continue-grid" id="continueGrid"></div>
     <section class="stats-strip"><div><span class="stat-icon lilac">✓</span><p><strong id="completedStat">0</strong><small>sessões concluídas</small></p></div><div><span class="stat-icon yellow">◷</span><p><strong id="minutesStat">0 min</strong><small>tempo de estudo</small></p></div><div><span class="stat-icon green">↗</span><p><strong id="averageStat">0%</strong><small>progresso geral</small></p></div><div><span class="stat-icon coral">★</span><p><strong id="pointsStat">0</strong><small>pontos conquistados</small></p></div></section>
@@ -53,12 +55,12 @@
   </template>
 
   <template id="diagnosticTemplate">
-    <section class="page-intro"><span class="eyebrow">PONTO DE PARTIDA PARA O ENEM</span><h1>Descubra seu nível atual</h1><p>Não é prova e não vale nota. Suas respostas definem se cada trilha começa no nível fundamental, básico, intermediário ou avançado.</p></section>
+    <section class="page-intro"><span class="eyebrow">PONTO DE PARTIDA</span><h1>Descubra seu nível atual</h1><p>Não é prova e não vale nota. Suas respostas definem se cada trilha começa no nível fundamental, básico, intermediário ou avançado.</p></section>
     <div id="quizArea"></div>
   </template>
 
   <template id="todayTemplate">
-    <section class="page-intro"><span class="eyebrow">SESSÃO ADAPTATIVA</span><h1>Vamos estudar para o ENEM?</h1><p>Escolha uma matéria. O conteúdo começa no seu nível atual e avança conforme o seu desempenho.</p></section>
+    <section class="page-intro"><span class="eyebrow">SESSÃO ADAPTATIVA</span><h1>O que vamos aprender hoje?</h1><p>Escolha uma matéria. O conteúdo começa no seu nível atual e avança conforme o seu desempenho.</p></section>
     <div class="study-layout"><div class="panel"><h3>1. Escolha a matéria</h3><div class="study-subjects" id="studySubjects"></div></div><div class="panel today-plan"><span class="eyebrow">MÉTODO 25–5</span><h2>Sua sessão de hoje</h2><ol><li><b>5 min</b> — relembre o que já sabe</li><li><b>12 min</b> — estude um conceito novo</li><li><b>6 min</b> — resolva exercícios</li><li><b>2 min</b> — anote dúvidas e aprendizados</li></ol><button class="primary-btn" id="startSession" disabled>Escolha uma matéria</button></div></div>
   </template>
 </body>

@@ -1,8 +1,8 @@
 {
-  "name": "estudai-enem",
+  "name": "estudai-plataforma",
   "version": "1.0.0",
   "private": true,
-  "description": "Plataforma adaptativa de estudos para o ENEM",
+  "description": "Plataforma adaptativa para formação escolar, idiomas e programação",
   "scripts": {
     "start": "node server.js",
     "check": "node --check app.js && node --check server.js"

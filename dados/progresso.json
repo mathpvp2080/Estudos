@@ -1,8 +1,8 @@
 {
   "ultimaAtualizacao": "2026-10-05",
-  "objetivo": "ENEM",
+  "objetivo": "aprendizagem contínua",
   "modelo": "trilhas adaptativas por nível: fundamental, básico, intermediário e avançado",
-  "observacao": "Diagnóstico inicial pendente. JavaScript é opcional e não entra no progresso do ENEM. Os arquivos de cada matéria são a fonte oficial.",
+  "observacao": "Diagnóstico inicial pendente. Os arquivos de cada trilha são a fonte oficial do progresso.",
   "sessoesConcluidas": 0,
   "minutosEstudados": 0,
   "sequenciaDias": 0
