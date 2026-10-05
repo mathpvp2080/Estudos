@@ -1,0 +1,11 @@
+{
+  "name": "estudai-plataforma",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma adaptativa para formação escolar, idiomas e programação",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check app.js && node --check server.js"
+  },
+  "engines": { "node": ">=22.5.0" }
+}
